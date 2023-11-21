@@ -148,7 +148,7 @@ class _WeatherPageState extends State<WeatherPage> {
   Widget buildWeatherCard(WeatherList weatherListItem, String formattedDate) {
     if (formattedDate.isNotEmpty) {
       return Card(
-        color: Colors.blueGrey.withOpacity(0.45),
+        color: Colors.pinkAccent.withOpacity(0.45),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
@@ -268,7 +268,10 @@ class _WeatherPageState extends State<WeatherPage> {
                   tileMode: TileMode.clamp,
                   begin: Alignment.topRight,
                   end: Alignment.bottomRight,
-                  colors: [Color(0xff08203e), Color(0xff557c93)],
+                  colors: [
+                    Color(0xfff48fb1),
+                    Color(0xfff8bbd0)
+                  ],
                 ),
               ),
               child: ListView(children: [
@@ -464,7 +467,7 @@ class _WeatherPageState extends State<WeatherPage> {
                           child: Container(
                             height: 300,
                             child: Card(
-                              color: Colors.blueGrey.withOpacity(0.45),
+                              color: Colors.pinkAccent.withOpacity(0.45),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20),
                               ),
